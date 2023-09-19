@@ -1,6 +1,5 @@
 package org.co.edu.uniquindio.tiendaRopa;
 
-
 import org.co.edu.uniquindio.tiendaRopa.Model.Cliente;
 import org.co.edu.uniquindio.tiendaRopa.Model.Enumeracion.Color;
 import org.co.edu.uniquindio.tiendaRopa.Model.Enumeracion.Sexo;
@@ -55,9 +54,6 @@ public class Main {
         tienda.setCliente4(cliente4);
         tienda.setCliente5(cliente5);
 
-        /* Obtener el cliente con el mayor número de prendas compradas */
-        obtenerClienteMayorPrendasCompradas(cliente1, cliente2, cliente3, cliente4, cliente5);
-
         return tienda;
     }
 
@@ -83,10 +79,5 @@ public class Main {
         cliente.setFechaUltimaCompra(fechaUltimaCompra);
 
         return cliente;
-    }
-
-    /* Obtener el cliente con el mayor número de prendas compradas */
-    private static void obtenerClienteMayorPrendasCompradas(Cliente cliente1, Cliente cliente2, Cliente cliente3, Cliente cliente4, Cliente cliente5){
-
     }
 }
