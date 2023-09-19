@@ -15,6 +15,9 @@ public class Main {
 
         /* Inicializar los datos prueba de las prendas*/
         tienda.mostrarInformacionPrendas();
+
+        /* Obtener el cliente con el mayor número de prendas compradas */
+        tienda.obtenerClienteMayorPrendasCompradas();
     }
 
     private static Tienda inicializarDatosPrueba(){
@@ -39,6 +42,9 @@ public class Main {
         tienda.setCliente3(cliente3);
         tienda.setCliente4(cliente4);
         tienda.setCliente5(cliente5);
+
+        /* Obtener el cliente con el mayor número de prendas compradas */
+        obtenerClienteMayorPrendasCompradas(cliente1, cliente2, cliente3, cliente4, cliente5);
 
         return tienda;
     }
@@ -65,5 +71,10 @@ public class Main {
         cliente.setFechaUltimaCompra(fechaUltimaCompra);
 
         return cliente;
+    }
+
+    /* Obtener el cliente con el mayor número de prendas compradas */
+    private static void obtenerClienteMayorPrendasCompradas(Cliente cliente1, Cliente cliente2, Cliente cliente3, Cliente cliente4, Cliente cliente5){
+
     }
 }

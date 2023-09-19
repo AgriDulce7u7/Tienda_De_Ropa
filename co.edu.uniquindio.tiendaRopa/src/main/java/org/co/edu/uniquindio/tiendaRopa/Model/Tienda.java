@@ -107,4 +107,31 @@ public class Tienda {
         String informacionPrenda5 = getPrenda5().obtenerInformacion();
         System.out.println("La información de la prenda 5 es: "+"\n"+informacionPrenda5);
     }
+
+    /* Obtener el cliente con el mayor número de prendas compradas */
+    public void obtenerClienteMayorPrendasCompradas(){
+        int clienteMayorCompra = 0;
+        String nombreCliente= "";
+        if (cliente1.getPrendasCompradas() > clienteMayorCompra){
+            clienteMayorCompra = cliente1.getPrendasCompradas();
+            nombreCliente = cliente1.getNombreCompleto();
+        }
+        if (cliente2.getPrendasCompradas() > clienteMayorCompra){
+            clienteMayorCompra = cliente2.getPrendasCompradas();
+            nombreCliente = cliente2.getNombreCompleto();
+        }
+        if (cliente3.getPrendasCompradas() > clienteMayorCompra){
+            clienteMayorCompra = cliente3.getPrendasCompradas();
+            nombreCliente = cliente3.getNombreCompleto();
+        }
+        if (cliente4.getPrendasCompradas() > clienteMayorCompra){
+            clienteMayorCompra = cliente4.getPrendasCompradas();
+            nombreCliente = cliente4.getNombreCompleto();
+        }
+        if (cliente5.getPrendasCompradas() > clienteMayorCompra){
+            clienteMayorCompra = cliente5.getPrendasCompradas();
+            nombreCliente = cliente5.getNombreCompleto();
+        }
+        System.out.println("El cliente "+nombreCliente+" es el que más prendas ha comprado, con un total de "+clienteMayorCompra);
+    }
 }
