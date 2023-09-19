@@ -216,4 +216,31 @@ public class Tienda {
             System.out.println("La prenda "+getPrenda5().getTipoPrenda()+" es talla S.");
         }
     }
+
+    /* Obtener la prenda más económica */
+    public void obtenerPrendaMenorPrecio(){
+        String nombrePrenda = "";
+        double menorPrecio = 0.0;
+        if (prenda1.getPrecio() > menorPrecio){
+            menorPrecio = prenda1.getPrecio();
+            nombrePrenda = prenda1.getTipoPrenda();
+        }
+        if (prenda2.getPrecio() < menorPrecio){
+            menorPrecio = prenda2.getPrecio();
+            nombrePrenda = prenda2.getTipoPrenda();
+        }
+        if (prenda3.getPrecio() < menorPrecio){
+            menorPrecio = prenda3.getPrecio();
+            nombrePrenda = prenda3.getTipoPrenda();
+        }
+        if (prenda4.getPrecio() < menorPrecio){
+            menorPrecio = prenda4.getPrecio();
+            nombrePrenda = prenda4.getTipoPrenda();
+        }
+        if (prenda5.getPrecio() < menorPrecio){
+            menorPrecio = prenda5.getPrecio();
+            nombrePrenda = prenda5.getTipoPrenda();
+        }
+        System.out.println("La prenda "+nombrePrenda+" es la más económica. Su valor es de "+menorPrecio);
+    }
 }

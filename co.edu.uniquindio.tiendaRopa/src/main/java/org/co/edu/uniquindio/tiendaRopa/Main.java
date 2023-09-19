@@ -27,6 +27,9 @@ public class Main {
 
         /* Mostrar los tipos de prenda que son talla S */
         tienda.mostrarPrendasTallaS();
+
+        /* Obtener la prenda más económica */
+        tienda.obtenerPrendaMenorPrecio();
     }
 
     private static Tienda inicializarDatosPrueba(){
