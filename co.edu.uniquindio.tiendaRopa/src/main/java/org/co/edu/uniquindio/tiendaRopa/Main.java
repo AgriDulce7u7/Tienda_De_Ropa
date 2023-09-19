@@ -18,6 +18,9 @@ public class Main {
 
         /* Obtener el cliente con el mayor número de prendas compradas */
         tienda.obtenerClienteMayorPrendasCompradas();
+
+        /* Obtener la prenda con menos cantidad disponible */
+        tienda.obtenerPrendaMenorCantidad();
     }
 
     private static Tienda inicializarDatosPrueba(){

@@ -134,4 +134,31 @@ public class Tienda {
         }
         System.out.println("El cliente "+nombreCliente+" es el que más prendas ha comprado, con un total de "+clienteMayorCompra);
     }
+
+    /* Obtener la prenda con menos cantidad disponible */
+    public void obtenerPrendaMenorCantidad(){
+        int cantidadDisponible = 0;
+        String nombrePrenda = "";
+        if (prenda1.getCantidadDisponible() > cantidadDisponible){
+            cantidadDisponible = prenda1.getCantidadDisponible();
+            nombrePrenda = prenda1.getTipoPrenda();
+        }
+        if (prenda2.getCantidadDisponible() < cantidadDisponible){
+            cantidadDisponible = prenda2.getCantidadDisponible();
+            nombrePrenda = prenda2.getTipoPrenda();
+        }
+        if (prenda3.getCantidadDisponible() < cantidadDisponible){
+            cantidadDisponible = prenda3.getCantidadDisponible();
+            nombrePrenda = prenda3.getTipoPrenda();
+        }
+        if (prenda4.getCantidadDisponible() < cantidadDisponible){
+            cantidadDisponible = prenda4.getCantidadDisponible();
+            nombrePrenda = prenda4.getTipoPrenda();
+        }
+        if (prenda5.getCantidadDisponible() < cantidadDisponible){
+            cantidadDisponible = prenda5.getCantidadDisponible();
+            nombrePrenda = prenda5.getTipoPrenda();
+        }
+        System.out.println("La prenda "+nombrePrenda+" es la que  menor cantidad  disponible tiene con un total de "+cantidadDisponible);
+    }
 }
