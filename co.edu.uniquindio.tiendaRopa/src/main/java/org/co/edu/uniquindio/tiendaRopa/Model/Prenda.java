@@ -28,6 +28,21 @@ public class Prenda {
         this.cantidadDisponible = cantidadDisponible;
     }
 
+    /* Obtener la información de las prendas */
+    public String obtenerInformacion(){
+        String informacion = "";
+        informacion = informacion +
+                "Tipo de Prenda: "+getTipoPrenda()+"\n"+
+                "Referencia: "+getReferencia()+"\n"+
+                "Tipo de Cliente: "+getTipoCliente()+"\n"+
+                "Talla: "+getTalla()+"\n"+
+                "Color: "+getColor()+"\n"+
+                "Precio: "+getPrecio()+"\n"+
+                "Cantidad Disponible: "+getCantidadDisponible()+"\n";
+
+        return informacion;
+    }
+
     /* Getters and Setters */
     public String getTipoPrenda() {
         return tipoPrenda;

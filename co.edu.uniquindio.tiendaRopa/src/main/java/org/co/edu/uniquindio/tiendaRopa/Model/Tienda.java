@@ -93,4 +93,18 @@ public class Tienda {
     public void setCliente5(Cliente cliente5) {
         this.cliente5 = cliente5;
     }
+
+    /* Mostrar la información de las prendas */
+    public void mostrarInformacionPrendas(){
+        String informacionPrenda1 = getPrenda1().obtenerInformacion();
+        System.out.println("La información de la prenda 1 es: "+"\n"+informacionPrenda1);
+        String informacionPrenda2 = getPrenda2().obtenerInformacion();
+        System.out.println("La información de la prenda 2 es: "+"\n"+informacionPrenda2);
+        String informacionPrenda3 = getPrenda3().obtenerInformacion();
+        System.out.println("La información de la prenda 3 es: "+"\n"+informacionPrenda3);
+        String informacionPrenda4 = getPrenda4().obtenerInformacion();
+        System.out.println("La información de la prenda 4 es: "+"\n"+informacionPrenda4);
+        String informacionPrenda5 = getPrenda5().obtenerInformacion();
+        System.out.println("La información de la prenda 5 es: "+"\n"+informacionPrenda5);
+    }
 }

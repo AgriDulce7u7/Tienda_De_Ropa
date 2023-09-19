@@ -12,6 +12,9 @@ import org.co.edu.uniquindio.tiendaRopa.Model.Tienda;
 public class Main {
     public static void main(String[] args) {
         Tienda tienda = inicializarDatosPrueba();
+
+        /* Inicializar los datos prueba de las prendas*/
+        tienda.mostrarInformacionPrendas();
     }
 
     private static Tienda inicializarDatosPrueba(){
