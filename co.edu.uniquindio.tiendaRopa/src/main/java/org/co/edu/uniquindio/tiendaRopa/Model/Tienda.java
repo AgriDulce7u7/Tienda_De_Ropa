@@ -1,6 +1,7 @@
 package org.co.edu.uniquindio.tiendaRopa.Model;
 
 import org.co.edu.uniquindio.tiendaRopa.Model.Enumeracion.Sexo;
+import org.co.edu.uniquindio.tiendaRopa.Model.Enumeracion.Talla;
 
 public class Tienda {
     private Prenda prenda1;
@@ -195,5 +196,24 @@ public class Tienda {
         }
         System.out.println("La cantidad de hombres es de "+cantidadHombres);
         System.out.println("La cantidad de mujees es de "+cantidadMujeres);
+    }
+
+    /* Mostrar los tipos de prenda que son talla S */
+    public void mostrarPrendasTallaS(){
+        if (prenda1.getTalla() == Talla.S){
+            System.out.println("La prenda "+getPrenda1().getTipoPrenda()+" es talla S.");
+        }
+        if (prenda2.getTalla() == Talla.S){
+            System.out.println("La prenda "+getPrenda2().getTipoPrenda()+" es talla S.");
+        }
+        if (prenda3.getTalla() == Talla.S){
+            System.out.println("La prenda "+getPrenda3().getTipoPrenda()+" es talla S.");
+        }
+        if (prenda4.getTalla() == Talla.S){
+            System.out.println("La prenda "+getPrenda4().getTipoPrenda()+" es talla S.");
+        }
+        if (prenda5.getTalla() == Talla.S){
+            System.out.println("La prenda "+getPrenda5().getTipoPrenda()+" es talla S.");
+        }
     }
 }

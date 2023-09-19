@@ -24,6 +24,9 @@ public class Main {
 
         /* Obtener el total de hombres y mujeres */
         tienda.obtenerCantidadSexo();
+
+        /* Mostrar los tipos de prenda que son talla S */
+        tienda.mostrarPrendasTallaS();
     }
 
     private static Tienda inicializarDatosPrueba(){
