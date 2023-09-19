@@ -1,5 +1,7 @@
 package org.co.edu.uniquindio.tiendaRopa.Model;
 
+import org.co.edu.uniquindio.tiendaRopa.Model.Enumeracion.Sexo;
+
 public class Tienda {
     private Prenda prenda1;
     private Prenda prenda2;
@@ -160,5 +162,38 @@ public class Tienda {
             nombrePrenda = prenda5.getTipoPrenda();
         }
         System.out.println("La prenda "+nombrePrenda+" es la que  menor cantidad  disponible tiene con un total de "+cantidadDisponible);
+    }
+
+    /* Obtener el total de hombres y mujeres */
+    public void obtenerCantidadSexo(){
+        int cantidadHombres = 0;
+        int cantidadMujeres = 0;
+        if (cliente1.getSexo() == Sexo.MASCULINO){
+            cantidadHombres += 1;
+        }else{
+            cantidadMujeres += 1;
+        }
+        if (cliente2.getSexo() == Sexo.MASCULINO){
+            cantidadHombres += 1;
+        }else{
+            cantidadMujeres += 1;
+        }
+        if (cliente3.getSexo() == Sexo.MASCULINO){
+            cantidadHombres += 1;
+        }else{
+            cantidadMujeres += 1;
+        }
+        if (cliente4.getSexo() == Sexo.MASCULINO){
+            cantidadHombres += 1;
+        }else{
+            cantidadMujeres += 1;
+        }
+        if (cliente5.getSexo() == Sexo.MASCULINO){
+            cantidadHombres += 1;
+        }else{
+            cantidadMujeres += 1;
+        }
+        System.out.println("La cantidad de hombres es de "+cantidadHombres);
+        System.out.println("La cantidad de mujees es de "+cantidadMujeres);
     }
 }

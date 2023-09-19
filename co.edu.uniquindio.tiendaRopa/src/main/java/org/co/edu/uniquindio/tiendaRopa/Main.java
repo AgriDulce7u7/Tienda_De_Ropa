@@ -21,6 +21,9 @@ public class Main {
 
         /* Obtener la prenda con menos cantidad disponible */
         tienda.obtenerPrendaMenorCantidad();
+
+        /* Obtener el total de hombres y mujeres */
+        tienda.obtenerCantidadSexo();
     }
 
     private static Tienda inicializarDatosPrueba(){
